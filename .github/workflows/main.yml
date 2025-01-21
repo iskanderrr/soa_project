@@ -20,4 +20,4 @@ jobs:
         port: 22
         script: |
           cd /root/soa
-          git pull https://iskanderrr:${{ secrets.GITHUB_SCRET }}@github.com/iskanderrr/soa_project.git master
+          git pull https://iskanderrr:${{ secrets.DEP_SCRT }}@github.com/iskanderrr/soa_project.git master
