@@ -37,7 +37,7 @@ export default function Donate() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:8084/test4_war/webapi/donations", {
+    fetch("https://purejavaapi.snailcamp.online/test4_war/webapi/donations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
