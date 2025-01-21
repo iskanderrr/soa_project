@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: damrej
+      if: github.ref == 'refs/heads/master'
+      uses: appleboy/ssh-action@master
+      with:
+        host: 217.69.11.107
+        username: root
+        password: ${{ secrets.VULTR_PASSWORD }}
+        port: 22
+        script: |
+          cd /root/soa
+          git pull https://iskanderrr:${{ secrets.GITHUB_SCRET }}@github.com/iskanderrr/soa_project.git master
