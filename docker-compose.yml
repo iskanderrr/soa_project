@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  jakartaee-app:
+    build:
+      context: .
+      dockerfile: ./Lineo_Donations_Pure_Java/Dockerfile
+    ports:
+      - "8084:8080"
+    container_name: jakartaee-app
+  react-app:
+    build:
+      context: .
+      dockerfile: ./fe/Dockerfile
+    ports:
+      - "3000:80"
