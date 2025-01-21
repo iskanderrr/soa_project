@@ -21,3 +21,4 @@ jobs:
         script: |
           cd /root/soa
           git pull https://iskanderrr:${{ secrets.DEP_SCRT }}@github.com/iskanderrr/soa_project.git master
+          docker compose up --build -d
