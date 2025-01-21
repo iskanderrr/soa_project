@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: ./Lineo_Donations_Pure_Java/Dockerfile
     ports:
-      - "8084:8080"
+      - "8084:8084"
     container_name: jakartaee-app
   react-app:
     build:
