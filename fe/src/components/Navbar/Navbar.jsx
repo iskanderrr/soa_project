@@ -13,6 +13,7 @@ export default function Navbar() {
       <ul className="navbar-links-outer">
         <li><Link className='button-filled' to="/donate-now">Donate</Link></li>
         <li><Link to="/about">About</Link></li>
+         <li><Link to="/admin">Admin</Link></li>
         <li><Link to="/story">Share your story</Link></li>
       </ul>
     </nav>
